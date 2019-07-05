@@ -1,8 +1,13 @@
 <div class="show">
+
+	<% if flash[:notice] %>
+		<p class="flash"><%= flash[:notice] %></p>
+	<% end %>
+
 	<p><strong>Title:</strong> <%= @book.title %></p>
 	<p><strong>Body:</strong> <%= @book.body %></p>
 
-	<span>
+	<span class="links">
 		<%= link_to "Edit", edit_book_path(@book), class: "lnk" %>
 		 | 
 		<%= link_to "Back", books_path, class: "lnk" %>

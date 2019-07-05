@@ -41,6 +41,8 @@ h2 {
 
 .lnk {
 	color: #000;
+	font-size: 13px;
+	line-height: 16px;
 }
 
 .lnk:visited {
@@ -62,13 +64,24 @@ p {
 	line-height: 18px;
 }
 
-.form_title {
+.title_form {
 	padding: 1px;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
-.form_body {
+.body_form {
 	padding: 2px;
+	margin-bottom: 10px;
+}
+
+.links {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.flash {
+	color: #008000;
 }
 
 
@@ -90,6 +103,10 @@ p {
 
 .index td {
 	padding: 1px 5px 7px;
+}
+
+.index .flash {
+	margin-bottom: 33px;
 }
 
 

@@ -1,4 +1,9 @@
 <section class="index">
+
+	<% if flash[:notice] %>
+		<p class="flash"><%= flash[:notice] %></p>
+	<% end %>
+
 	<h1>Books</h1>
 
 	<table cellpadding="15">
@@ -26,10 +31,10 @@
 
 	<%= form_for @book do |f| %>
 		<p>Title</p>
-		<p class="form_title"><%= f.text_field :title %></p>
+		<%= f.text_field :title, class: "title_form" %>
 
 		<p>Body</p>
-		<p class="form_body"><%= f.text_area :body %></p>
+		<%= f.text_area :body, class: "body_form" %>
 
 		<p><%= f.submit "Create Book" %></p>
 	<% end %>
