@@ -29,8 +29,29 @@ h1 {
 	font-size: 26px;
 	font-weight: bold;
 	line-height: 18px;
-	margin: 18px 0;
+	margin-bottom: 17px;
 }
+
+h2 {
+	font-size: 19.5px;
+	font-weight: bold;
+	line-height: 18px;
+	margin: 16px 0;
+}
+
+.lnk {
+	color: #000;
+}
+
+.lnk:visited {
+	color: #666;
+}
+
+.lnk:hover {
+	background: #000;
+	color: #fff;
+}
+
 
 .top, .index, .show, .edit {
 	margin: 33px;
@@ -81,6 +102,6 @@ p {
 	margin: 33px;
 }
 
-.show_links {
-	margin: 0;
+.show span {
+	font-size: 13px;
 }
